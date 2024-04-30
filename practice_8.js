@@ -1,4 +1,5 @@
-const baseUrl ="https://v6.exchangerate-api.com/v6/b79be01fad89983e3fed9d38/pair";
+const baseUrl =
+  "https://v6.exchangerate-api.com/v6/b79be01fad89983e3fed9d38/pair";
 const dropdowns = document.querySelectorAll(".dropdown select");
 const imgs = document.querySelectorAll("img");
 const button = document.querySelector("button");
@@ -18,6 +19,7 @@ for (let select of dropdowns) {
     ) {
       newOption.selected = "selected";
     }
+    newOption.classList.add("bg-dark");
     select.append(newOption);
   }
 }
